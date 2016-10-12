@@ -77,7 +77,7 @@ TODO: Write usage instructions here
   - [ ] Issue Comment
   - [ ] Pull request review comment
 
--[ ] Repositories
+- [ ] Repositories
   - [ ] Branches
   - [ ] Collaborators
   - [ ] Comments
