@@ -82,7 +82,7 @@ TODO: Write usage instructions here
   - [ ] Collaborators
   - [ ] Comments
   - [ ] Commits
-  - [ ] Contents
+  - [x] Contents
   - [ ] Deploy Keys
   - [ ] Deployments
   - [ ] Downloads
@@ -98,7 +98,7 @@ TODO: Write usage instructions here
   - [ ] Webhooks
 
 - [ ] Search
-  - [ ] Repositories
+  - [x] Repositories
   - [ ] Code
   - [ ] Issues
   - [ ] Users
