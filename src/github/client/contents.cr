@@ -6,11 +6,11 @@ module Github
       end
 
       def content(repo, path)
-        get repo.contents_url.gsub("{+path}", path)
+        Response::Contents.from_response get(repo.contents_url.gsub("{+path}", path))
       end
 
       def content_exists?(repo, path)
-        response = get repo.contents_url.gsub("{+path}", path)
+        response = content(repo, path)
         response.status_code == 200
       end
     end
