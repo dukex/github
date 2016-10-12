@@ -1,6 +1,6 @@
 # github
 
-TODO: Write a description here
+Crystal toolkit for the GitHub API
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   github:
-    github: [your-github-name]/github
+    github: dukex/github
 ```
 
 
@@ -112,7 +112,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/github/fork )
+1. Fork it ( https://github.com/dukex/github/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -120,4 +120,4 @@ TODO: Write usage instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Duke - creator, maintainer
+- [dukex](https://github.com/dukex) Duke - creator, maintainer
