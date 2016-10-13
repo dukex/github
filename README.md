@@ -27,6 +27,7 @@ TODO: Write usage instructions here
 ## Development
 
 ### TODO
+- [ ] Add Test
 
 - [ ] Authentication
   - [ ] Basic Authentication
