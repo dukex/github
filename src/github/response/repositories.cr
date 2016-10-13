@@ -1,5 +1,6 @@
 require "json"
 require "./base"
+require "./user"
 
 module Github
   module Response

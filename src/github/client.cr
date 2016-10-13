@@ -1,6 +1,7 @@
 require "http/client"
 require "./client/search"
 require "./client/contents"
+require "./client/users"
 
 module Github
   class Client
@@ -8,6 +9,7 @@ module Github
 
     include Search
     include Contents
+    include Users
 
     def get(path)
       get(path, Hash(String, String).new)
