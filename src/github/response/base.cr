@@ -10,7 +10,7 @@ module Github
 
         case status
         when      400 then raise BadRequest.new nil
-        when      401 then raise error_for_401(headers)
+        when      401 then raise error_for_401(headers, body)
         when      403 then raise error_for_403(body)
         when      404 then raise NotFound.new nil
         when      405 then raise MethodNotAllowed.new nil
@@ -30,11 +30,11 @@ module Github
         from_json(body)
       end
 
-      def self.error_for_401(headers)
+      def self.error_for_401(headers, body)
         if OneTimePasswordRequired.required_header(headers)
-          OneTimePasswordRequired.new nil, nil
+          OneTimePasswordRequired.new body, nil
         else
-          Unauthorized.new nil, nil
+          Unauthorized.new body, nil
         end
       end
 
