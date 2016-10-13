@@ -30,6 +30,7 @@ module Github
     private def http
       http = HTTP::Client.new(ENDPOINT, 443, true)
       http.before_request do |request|
+        request.headers["Accept"] = "application/vnd.github.v3+json"
         request.headers["Authorization"] = "token #{access_token}" if access_token
       end
       http
