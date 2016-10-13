@@ -2,7 +2,7 @@ require "../response/user"
 
 module Github
   class Client
-    module users
+    module Users
       def user(user = nil, options = {} of String => String)
         Response::User.from_response get user_path(user)
       end
