@@ -72,7 +72,7 @@ module Github
     OTP_DELIVERY_PATTERN = /required; (\w+)/i
 
     def self.required_header(headers)
-      OTP_DELIVERY_PATTERN.match headers["X-GitHub-OTP"].to_s
+      OTP_DELIVERY_PATTERN.match headers.fetch("X-GitHub-OTP", "").to_s
     end
   end
 end
