@@ -32,9 +32,7 @@ module Github
         public_repos: Int32?,
         public_gists: Int32?,
         followers: Int32?,
-        following: Int32? # created_at:               "2008-01-14T04:33:35Z",
-      # updated_at:               "2008-01-14T04:33:35Z"
-
+        following: Int32?
       )
     end
   end
