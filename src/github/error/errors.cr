@@ -1,8 +1,5 @@
 module Github
   module Error
-    class BadRequest < Exception
-    end
-
     class NotFound < Exception
     end
 
@@ -21,9 +18,6 @@ module Github
     class UnsupportedMediaType < Exception
     end
 
-    class UnprocessableEntity < Exception
-    end
-
     class UnavailableForLegalReasons < Exception
     end
 
@@ -37,9 +31,6 @@ module Github
     end
 
     class BadGateway < Exception
-    end
-
-    class BadRequest < Exception
     end
 
     class ServiceUnavailable < Exception
