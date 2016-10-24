@@ -2,6 +2,7 @@ require "http/client"
 require "./client/search"
 require "./client/contents"
 require "./client/users"
+require "./client/releases"
 
 module Github
   class Client
@@ -10,6 +11,7 @@ module Github
     include Search
     include Contents
     include Users
+    include Releases
 
     @access_token : String?
 
