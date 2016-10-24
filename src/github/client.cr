@@ -23,6 +23,7 @@ module Github
     end
 
     def get(path, params : Hash(String, String))
+      puts "+> GET #{path} (#{params})" if Github.debug
       path += "?" + encode_params(params) if params.size > 0
       http.get(path)
     end
